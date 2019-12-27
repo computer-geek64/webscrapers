@@ -36,10 +36,10 @@ prizes = document.css("i.fa-trophy + div.stat-content").map {|x| x.text.strip.sp
 times = document.css("i.fa-clock + div.stat-content").map {|x| x.text.strip.split(" to submit")[0]}
 participants = document.css("i.fa-user-friends + span.value").map {|x| x.text.strip}
 
-puts titles.to_s
-puts links.to_s
-puts descriptions.to_s
-puts locations.to_s
-puts prizes.to_s
-puts times.to_s
-puts participants.to_s
+puts "Names: #{titles.to_s}"
+puts "Links: #{links.to_s}"
+puts "Descriptions: #{descriptions.to_s}"
+puts "Locations: #{locations.to_s}"
+puts "Prizes: #{prizes.to_s}"
+puts "Times: #{times.to_s}"
+puts "Participants: #{participants.to_s}"
